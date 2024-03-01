@@ -232,12 +232,12 @@ class _StateNewExpenses extends State<NewExpenses> {
       _showDialog();
       return;
     } else {
-      // widget.onAddExpense(Expense(
-      //   title: _titleController.text,
-      //   amount: enteredAmount,
-      //   date: _selectedDate!,
-      //   category: _selectedCategory,
-      // ));
+      widget.onAddExpense(Expense(
+        title: _titleController.text,
+        amount: enteredAmount,
+        date: _selectedDate!,
+        category: _selectedCategory,
+      ));
       setState(() {
         isSaving = true;
       });
